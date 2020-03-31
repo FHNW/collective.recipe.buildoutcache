@@ -45,7 +45,7 @@ class Recipe(object):
             'work_dir': self.work_dir,
             'timeout': self.timeout,
             'preremove_old_work_dir': self.preremove_old_work_dir
-        }.iteritems():
+        }.items():
             if value is not None:
                 arguments += "%s='%s', " % (key, value)
         create_script(
